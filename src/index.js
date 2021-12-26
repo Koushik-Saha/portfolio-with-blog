@@ -3,12 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+import GlobalStyle from "./globalStyles";
+import {AnimatePresence} from "framer-motion";
+import {ThemeProvider} from "styled-components";
+import {lightTheme} from "./components/Themes";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <BrowserRouter>
+            <GlobalStyle>
+                <ThemeProvider theme={lightTheme}>
+                    {/*<SoundBar />*/}
+                    <AnimatePresence exitBeforeEnter>
+                        <App/>
+                    </AnimatePresence>
+                </ThemeProvider>
+            </GlobalStyle>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
