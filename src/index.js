@@ -7,19 +7,19 @@ import GlobalStyle from "./globalStyles";
 import {AnimatePresence} from "framer-motion";
 import {ThemeProvider} from "styled-components";
 import {lightTheme} from "./components/Themes";
-import '../node_modules/normalize.css'
+import SoundBar from "./subComponents/SoundBar";
+// import 'node_modules/normalize.css'
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <GlobalStyle>
-                <ThemeProvider theme={lightTheme}>
-                    {/*<SoundBar />*/}
-                    <AnimatePresence exitBeforeEnter>
-                        <App/>
-                    </AnimatePresence>
-                </ThemeProvider>
-            </GlobalStyle>
+            <GlobalStyle/>
+            <ThemeProvider theme={lightTheme}>
+                <SoundBar/>
+                <AnimatePresence exitBeforeEnter>
+                    <App/>
+                </AnimatePresence>
+            </ThemeProvider>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
