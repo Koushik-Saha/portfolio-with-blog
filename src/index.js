@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
@@ -8,6 +7,7 @@ import GlobalStyle from "./globalStyles";
 import {AnimatePresence} from "framer-motion";
 import {ThemeProvider} from "styled-components";
 import {lightTheme} from "./components/Themes";
+import '../node_modules/normalize.css'
 
 ReactDOM.render(
     <React.StrictMode>
