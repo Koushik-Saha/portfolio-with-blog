@@ -76,14 +76,14 @@ const AboutPage = () => {
                     <img src={astronaut} alt="spaceman"/>
                 </Spaceman>
                 <Main>
-                    I'm a front-end developer located in India. I love to create simple yet beautiful websites with
+                    I'm a front-end developer located from bangladesh. I love to create simple yet beautiful websites with
                     great user experience.
                     <br/> <br/>
-                    I'm interested in the whole frontend stack Like trying new things and building great projects. I'm
-                    an independent freelancer and blogger. I love to write blogs and read books.
+                    I have been working on React JS and NEXT JS for 2 years. I have a vast knowledge of JavaScript and front-end
+                    tools like HTML, CSS, SCSS, Bootstrap. I have worked with REST APIs and have strong knowledge about UX design
+                    sensibilities.
                     <br/> <br/>
-                    I believe everything is an Art when you put your consciousness in it. You can connect with me via
-                    social links.
+                    In recent days, I’ve been working with Typescript & React Redux on a real project which is underdeveloped.
                 </Main>
                 <BigTitle text="ABOUT" top="10%" left="5%"/>
             </Box>
